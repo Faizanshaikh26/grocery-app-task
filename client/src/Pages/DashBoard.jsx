@@ -106,9 +106,15 @@ const DashBoard = () => {
             height: 300px; /* Increased height for smaller screens */
           }
         }
+
+        @media (min-width: 400px) and (max-width: 800px) {
+          .h-56 {
+            height: 400px; /* Adjust height for this range */
+          }
+        }
       `}</style>
     </div>
   );
 };
 
-export default DashBoard;
+export default DashBoard;  
