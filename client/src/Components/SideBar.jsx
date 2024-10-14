@@ -10,12 +10,12 @@ function Sidebar({ children }) {
     setIsOpen(!isOpen);
   };
 
-  // List of paths that are functional
+ 
   const functionalPaths = ['/dashboard', '/user'];
 
   const handleLinkClick = (e, path) => {
     if (!functionalPaths.includes(path)) {
-      e.preventDefault(); // Prevent navigation for non-functional paths
+      e.preventDefault(); 
     }
   };
 
