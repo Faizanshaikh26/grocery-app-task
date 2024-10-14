@@ -99,7 +99,7 @@ const DashBoard = () => {
         </div>
       </div>
 
-      {/* Additional styles for smaller screens */}
+      {/* Additional styles for responsive design */}
       <style jsx>{`
         @media (max-width: 550px) {
           .h-56 {
@@ -112,9 +112,20 @@ const DashBoard = () => {
             height: 400px; /* Adjust height for this range */
           }
         }
+
+        @media (min-width: 300px) and (max-width: 550px) {
+          .relative {
+            width: 100%; /* Increase width of the chart container */
+          }
+
+          .h-56 {
+            width: 90%; /* Increase width of the LineChart */
+            margin: 0 auto; /* Center the chart */
+          }
+        }
       `}</style>
     </div>
   );
 };
 
-export default DashBoard;  
+export default DashBoard;
